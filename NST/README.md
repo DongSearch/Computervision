@@ -22,7 +22,7 @@ It leverages a pretrained **VGG-19** model and a Gram matrix–based style loss 
  ### Tv_weight Variation
  <img width="3120" height="576" alt="image" src="https://github.com/user-attachments/assets/6edcaaed-a9ee-4875-bea5-fa44ffce82e8" />
 
-*The TV loss weight controls image smoothness. A very small weight has little to no effect on the output, while a larger weight enforces stronger smoothness. However, excessively large values can introduce artifacts and degrade visual quality.
+* The TV loss weight controls image smoothness. A very small weight has little to no effect on the output, while a larger weight enforces stronger smoothness. However, excessively large values can introduce artifacts and degrade visual quality.
 
 ### Extract from differnt layers(Content)
 <img width="347" height="344" alt="image" src="https://github.com/user-attachments/assets/e94f1b19-cc5a-42c3-9697-b4920d44deb7" />
