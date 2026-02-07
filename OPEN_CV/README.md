@@ -21,3 +21,23 @@ Restricting the template to a discriminative object region reduces background in
 * Cosine similarity compares relative intensity patterns, making it robust to illumination changes and effective at highlighting object structures.  
 Square difference compares absolute pixel values, so shadows and background with similar brightness can cause inaccurate matches.  
 
+# Background remover
+remove background, remaining only moving objects
+## Key Point
+- **Cosine**: Removes the mean intensity, so it compares relative pixel variations (patterns) rather than absolute brightness.(find max)    
+- **Square**: Compares absolute pixel values directly.(find min)  
+---
+
+## 📌 Consequences(Observation)
+
+###  basic(only)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a14a9a36-0c83-41a2-ac71-3916841d1fce" />
+
+
+* Using the entire image as a template leads to incorrect detections because background and grayscale intensity similarities dominate the matching.(above)  
+Restricting the template to a discriminative object region reduces background influence and improves localization accuracy.(below)  
+### Cosine Similarity vs Square difference
+<img width="829" height="438" alt="image" src="https://github.com/user-attachments/assets/390bd0a4-2aac-4f57-bd0c-58d4828c486f" />
+
+* Cosine similarity compares relative intensity patterns, making it robust to illumination changes and effective at highlighting object structures.  
+Square difference compares absolute pixel values, so shadows and background with similar brightness can cause inaccurate matches.  
