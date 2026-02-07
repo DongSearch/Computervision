@@ -14,13 +14,16 @@ VGG-19 pretrained model과 Gram Matrix 기반 style loss를 사용하여
 ![hanok](https://github.com/user-attachments/assets/7c8e8bcd-465d-46ae-a96d-51db20e7eb2b) ![gihbri](https://github.com/user-attachments/assets/6c70fc0a-1344-4e53-bef2-e391d18919b4)
 
 
--  Alpha Variation
+###  Alpha Variation
 <img width="1415" height="956" alt="image" src="https://github.com/user-attachments/assets/8ac008ee-5475-47cb-a015-1924250d9802" />
 
 * I observe that as the style weight (α) increases, more details from the style image—such as textures and colors—are incorporated into the output image.
-- Extract from different layers
+### Extract from different layers
+<img width="436" height="418" alt="image" src="https://github.com/user-attachments/assets/e723acf8-7846-4b27-8292-5424d4c62c80" />
+<img width="398" height="421" alt="image" src="https://github.com/user-attachments/assets/ee430bd6-9389-4026-b304-35fcbafe1e50" />
 
-- Tv_weight Variation
+
+ ### Tv_weight Variation
 ---
 
 ## 🧠 Experiment
