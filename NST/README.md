@@ -2,6 +2,8 @@
 
 This project implements **Neural Style Transfer (NST)** using PyTorch.  
 It leverages a pretrained **VGG-19** model and a Gram matrix–based style loss to perform various experiments combining content and style images. The project focuses on analyzing how **hyperparameters (α, β), layer selection, and loss design** affect the quality and characteristics of the generated images.
+<img width="1047" height="577" alt="image" src="https://github.com/user-attachments/assets/58daa36a-af9c-467f-98c8-95b18b39d4e9" />
+
 
 ---
 
