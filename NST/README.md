@@ -3,7 +3,14 @@
 This project implements **Neural Style Transfer (NST)** using PyTorch.  
 It leverages a pretrained **VGG-19** model and a Gram matrix–based style loss to perform various experiments combining content and style images. The project focuses on analyzing how **hyperparameters (α, β), layer selection, and loss design** affect the quality and characteristics of the generated images.
 <img width="1047" height="577" alt="image" src="https://github.com/user-attachments/assets/58daa36a-af9c-467f-98c8-95b18b39d4e9" />
-
+## Key Point
+- **Gram Matrix (G)**: Measures the correlation between feature maps of the generated image and the style target, capturing texture and style statistics rather than spatial structure.
+- **Loss Functions**:
+  - *Style Loss*: Computed using the MSE between Gram matrices, enforcing similarity in feature correlations.
+  - *Content Loss*: Computed using MSE between feature maps, preserving the spatial structure and object layout of the content image.
+- **Optimizer (L-BFGS)**: Compared to Adam, L-BFGS is well-suited for Neural Style Transfer since it directly optimizes a single image. The use of a closure allows precise loss evaluation and often leads to faster convergence and more stable results.
+- **Style Weight Normalization**: Proper normalization of style loss helps prevent gradient explosion caused by large Gram matrix values.
+- **Optimization Target**: The optimized parameters are the **image pixels themselves**, not the weights of the neural network.
 
 ---
 
