@@ -62,7 +62,7 @@ It estimates optical flow by assuming local brightness constancy and spatially s
 
 ## 📌 Consequences(Observation)
 
-###  tracing(only)
+###  flow(only)
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0371c171-4588-4225-be37-d3e7e00be585" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/546fbd65-733a-4b40-971d-0f2c7514b8b4" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a5f335e-7697-4abf-9bab-d932e50aef91" />
@@ -71,3 +71,22 @@ It estimates optical flow by assuming local brightness constancy and spatially s
 - The algorithm tracks people well when they move consistently at similar speeds and do not overlap.
 - The initialization of feature points is critical for stable tracking performance.
 - The method is sensitive to changes in brightness and illumination.
+
+# Optical Flow(Farnback)
+It estimates optical flow by approximating local neighborhoods with quadratic polynomials and computing pixel-wise displacement from changes in these polynomial expansions across frames.
+
+## Key Point
+- **window size**: A smaller window size can track small objects more precisely, but it is more sensitive to noise and abrupt motion. A larger window size reduces the influence of noise, but may miss small or fine movements.
+- **pyramid**  : The Lucas–Kanade method is specialized for tracking small motions. To handle larger displacements, an image pyramid can be used.
+- **Gausian blur**  : remove noise
+---
+
+## 📌 Consequences(Observation)
+
+###  flow(only)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1aef3e06-e8a6-40ca-af3b-286ad2c42fad" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/79b305c8-3bab-425b-83c5-2e37f489315a" />
+
+
+- Farneback computes optical flow for all pixels, which increases computational cost and makes it slower than sparse methods.
+- Upsampling(pyramid) can induece accumulation of error from lower pyramid levels
