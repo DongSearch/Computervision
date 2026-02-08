@@ -8,4 +8,6 @@ practice personally to get into subject more deeply
 ### Template Matching
 * Cosine similarity, Square difference, Scaling
 ### Background remover
-* Contour filtering, Temporal filtering, MOG2 
+* Contour filtering, Temporal filtering, MOG2
+### Optical Flow
+* Lucas-Kanade(Sparse) 
