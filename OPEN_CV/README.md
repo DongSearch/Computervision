@@ -50,3 +50,24 @@ Weight of the previous frame in temporal smoothing; higher values increase stabi
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0fdf8ad-1cf5-47ae-8954-64d8ee833256" />
 
 * it can detect people more smoothly, contour filtering finds contour overall based on object, and temporal filtering remove non-movable or slow object
+
+
+# Optical Flow(Lucas–Kanade)
+It estimates optical flow by assuming local brightness constancy and spatially smooth motion within a small window, and iteratively minimizes the intensity difference between consecutive frames.
+## Key Point
+- **window size**: A smaller window size can track small objects more precisely, but it is more sensitive to noise and abrupt motion. A larger window size reduces the influence of noise, but may miss small or fine movements.
+- **pyramid**  : The Lucas–Kanade method is specialized for tracking small motions. To handle larger displacements, an image pyramid can be used.
+- **critierion**  : Defines how long the algorithm continues tracking, based on convergence conditions such as the number of iterations or the error threshold.
+---
+
+## 📌 Consequences(Observation)
+
+###  tracing(only)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0371c171-4588-4225-be37-d3e7e00be585" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/546fbd65-733a-4b40-971d-0f2c7514b8b4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a5f335e-7697-4abf-9bab-d932e50aef91" />
+
+
+- The algorithm tracks people well when they move consistently at similar speeds and do not overlap.
+- The initialization of feature points is critical for stable tracking performance.
+- The method is sensitive to changes in brightness and illumination.
