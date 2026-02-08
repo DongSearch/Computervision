@@ -10,4 +10,6 @@ practice personally to get into subject more deeply
 ### Background remover
 * Contour filtering, Temporal filtering, MOG2
 ### Optical Flow
-* Lucas-Kanade(Sparse) 
+* Lucas-Kanade(Sparse)
+* Farnback(dense)
+
