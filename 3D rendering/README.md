@@ -27,7 +27,9 @@ Distance(delta) : how thick that small segment is
 
 ## 📌 Consequences(Observation)
 ### original image
-![hanok](https://github.com/user-attachments/assets/7c8e8bcd-465d-46ae-a96d-51db20e7eb2b) ![gihbri](https://github.com/user-attachments/assets/6c70fc0a-1344-4e53-bef2-e391d18919b4)
+<img width="977" height="374" alt="image" src="https://github.com/user-attachments/assets/e33f7d12-0570-443d-932d-83a2f6ebe30f" />
+<img width="112" height="112" alt="image" src="https://github.com/user-attachments/assets/f548c7db-e918-4a92-bc2c-e40fbc77afe0" />
+
 
 ###  Alpha Variation
 <img width="1415" height="956" alt="image" src="https://github.com/user-attachments/assets/8ac008ee-5475-47cb-a015-1924250d9802" />
