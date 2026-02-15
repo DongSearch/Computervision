@@ -28,12 +28,9 @@ Distance(delta) : how thick that small segment is
 ## 📌 Consequences(Observation)
 ### original image
 <img width="977" height="374" alt="image" src="https://github.com/user-attachments/assets/e33f7d12-0570-443d-932d-83a2f6ebe30f" />
+https://github.com/user-attachments/assets/222d75f2-e33e-4144-9852-22bbe20599bf
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/222d75f2-e33e-4144-9852-22bbe20599bf">
-    <img src="thumbnail.png" width="800">
-  </a>
-</p>
+
 
 
 
