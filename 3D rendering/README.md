@@ -36,6 +36,7 @@ Distance(delta) : how thick that small segment is
 </p>
 
 
+
 ###  Alpha Variation
 <img width="1415" height="956" alt="image" src="https://github.com/user-attachments/assets/8ac008ee-5475-47cb-a015-1924250d9802" />
 
