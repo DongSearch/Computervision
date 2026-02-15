@@ -15,9 +15,13 @@ In LLMs, positional encoding tells the model where each word is in a sentence.
 In NeRF, positional encoding helps the network represent detailed spatial variations like sharp edges and textures.
 
 
-- **Optimizer (L-BFGS)**: Compared to Adam, L-BFGS is well-suited for Neural Style Transfer since it directly optimizes a single image. The use of a closure allows precise loss evaluation and often leads to faster convergence and more stable results by using Hessian principal(2nd gradient).
-- **Style Weight Normalization**: Proper normalization of style loss helps prevent gradient explosion caused by large Gram matrix values.
-- **Optimization Target**: The optimized parameters are the **image pixels themselves**, not the weights of the neural network.
+- **Volume Rendering**:
+  <img width="1255" height="301" alt="image" src="https://github.com/user-attachments/assets/05129a68-e63b-4759-b3af-06bc310abd97" />
+
+it computes the color of a pixel by integrating the radiance along a ray weighted by the density and transmittance at each sampled point.
+Desnity(sigma) : how likely light stops there
+Transmittance(T) : how much light survives until that point
+Distance(delta) : how thick that small segment is
 
 ---
 
