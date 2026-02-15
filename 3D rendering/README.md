@@ -4,10 +4,17 @@
 ## Key Point
 - **Homogeneous Transformation Matrix**:
   <img width="1350" height="375" alt="image" src="https://github.com/user-attachments/assets/792f5198-c38d-44fc-bd89-61b4b644365a" />
+  this Matrix describes an entire doordinate frame(both direction and position in space)
+  R means rotation matrix(orientation), t is translation vector(position)
+  last 4th row make it possible to put multiplication and addition in same matrix
 
-- **Loss Functions**:
-  - *Style Loss*: Computed using the MSE between Gram matrices, enforcing similarity in feature correlations.
-  - *Content Loss*: Computed using MSE between feature maps, preserving the spatial structure and object layout of the content image.
+- **positional encoding**:
+  <img width="1426" height="232" alt="image" src="https://github.com/user-attachments/assets/eb9c0d0e-7fef-4222-8ee7-c022fc5bf024" />
+
+In LLMs, positional encoding tells the model where each word is in a sentence.
+In NeRF, positional encoding helps the network represent detailed spatial variations like sharp edges and textures.
+
+
 - **Optimizer (L-BFGS)**: Compared to Adam, L-BFGS is well-suited for Neural Style Transfer since it directly optimizes a single image. The use of a closure allows precise loss evaluation and often leads to faster convergence and more stable results by using Hessian principal(2nd gradient).
 - **Style Weight Normalization**: Proper normalization of style loss helps prevent gradient explosion caused by large Gram matrix values.
 - **Optimization Target**: The optimized parameters are the **image pixels themselves**, not the weights of the neural network.
@@ -17,7 +24,6 @@
 ## 📌 Consequences(Observation)
 ### original image
 ![hanok](https://github.com/user-attachments/assets/7c8e8bcd-465d-46ae-a96d-51db20e7eb2b) ![gihbri](https://github.com/user-attachments/assets/6c70fc0a-1344-4e53-bef2-e391d18919b4)
-
 
 ###  Alpha Variation
 <img width="1415" height="956" alt="image" src="https://github.com/user-attachments/assets/8ac008ee-5475-47cb-a015-1924250d9802" />
