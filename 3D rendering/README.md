@@ -30,9 +30,9 @@ Distance(delta) : how thick that small segment is
 <img width="977" height="374" alt="image" src="https://github.com/user-attachments/assets/e33f7d12-0570-443d-932d-83a2f6ebe30f" />
 
 <p align="center">
-  <video width="800" controls>
-    <source src="https://github.com/user-attachments/assets/222d75f2-e33e-4144-9852-22bbe20599bf" type="video/mp4">
-  </video>
+  <a href="https://github.com/user-attachments/assets/222d75f2-e33e-4144-9852-22bbe20599bf">
+    <img src="thumbnail.png" width="800">
+  </a>
 </p>
 
 
