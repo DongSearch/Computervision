@@ -14,17 +14,20 @@
 In LLMs, positional encoding tells the model where each word is in a sentence.
 In NeRF, positional encoding helps the network represent detailed spatial variations like sharp edges and textures.
 
-- **Ray**:
+- **Ray**:  
   <img width="172" height="45" alt="image" src="https://github.com/user-attachments/assets/a62a36d6-1ac0-4fc4-93fe-fb79050549e4" />
 
 it calculate current ray vector per pixel using ray origin(camera positio), ray direction, distance parameter
 
-- **Transmittance**:
+- **Transmittance**:  
   <img width="302" height="81" alt="image" src="https://github.com/user-attachments/assets/543a6026-bcfb-4937-b27f-20fe52556970" />
 
+it is the possibility for the ray to keep rest starting from t
 
-it calculate current ray vector per pixel using ray origin(camera positio), ray direction, distance parameter
+- **Weight**:    
+<img width="108" height="33" alt="image" src="https://github.com/user-attachments/assets/efd72ecf-2350-4a42-8c5f-ff2ce8ef3f8b" />
 
+it is importance to contribute to decide color at i-th pixel
 
 - **Volume Rendering**:
   <img width="1255" height="301" alt="image" src="https://github.com/user-attachments/assets/05129a68-e63b-4759-b3af-06bc310abd97" />
