@@ -1,4 +1,4 @@
-# 3D Rendering
+<img width="172" height="45" alt="image" src="https://github.com/user-attachments/assets/8a31b615-eb9a-461d-89dc-c6d7b9624aca" /># 3D Rendering
 3D renering is the process of simulating how light travels in a 3D scene and interacts with obejcts to produce a 2D image.
 
 ## Key Point
@@ -13,6 +13,17 @@
 
 In LLMs, positional encoding tells the model where each word is in a sentence.
 In NeRF, positional encoding helps the network represent detailed spatial variations like sharp edges and textures.
+
+- **Ray**:
+  <img width="172" height="45" alt="image" src="https://github.com/user-attachments/assets/a62a36d6-1ac0-4fc4-93fe-fb79050549e4" />
+
+it calculate current ray vector per pixel using ray origin(camera positio), ray direction, distance parameter
+
+- **Transmittance**:
+  <img width="302" height="81" alt="image" src="https://github.com/user-attachments/assets/543a6026-bcfb-4937-b27f-20fe52556970" />
+
+
+it calculate current ray vector per pixel using ray origin(camera positio), ray direction, distance parameter
 
 
 - **Volume Rendering**:
