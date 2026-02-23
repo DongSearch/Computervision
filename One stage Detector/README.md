@@ -1,13 +1,30 @@
-# XAI
+# YOLO
 
-Compared to traditional machine learning models, deep learning models contain many hidden layers, and their internal processes are highly entangled. This makes it difficult to explain the reasoning behind their outputs. Therefore, to increase confidence and trust in AI results, several approaches have been introduced under the concept of Explainable AI (XAI).
+While R-CNN prcoess two stage(classification and regression), YOLO can process them only one stage at expense of accuracy. Here I would like to introduce three version of Yolo that are changed representatively (v5, v8, v10)
 
-## Key Point
-- **CAM**: It can only be used in CNN models with a Global Average Pooling (GAP) layer followed by a fully connected (linear) layer. It computes a weighted sum of feature maps using the class-specific weights to highlight important regions.  
-- **Grad-CAM**:It can be applied to a wider range of CNN models. It uses the gradients of the target class score (not specifically NLL) with respect to feature maps to compute importance weights and generate a localization heatmap.  
-- **Saliency Map**: It computes the gradient of the output with respect to each input pixel. It shows how sensitive the prediction is to small changes in each pixel. It is simple but highly sensitive to noise.   
-- **Integrated Gradients**: Instead of using a single gradient like saliency maps, it integrates gradients along a path from a baseline (e.g., a black image) to the input. This reduces noise and provides more reliable attributions, but requires higher computational cost.
-- **Deeplift**:It compares the activation of each neuron to its reference (baseline) activation and assigns contribution scores based on differences. Unlike gradients, it can handle gradient saturation problems.
+## Background
+- **Yolo v5**:
+  <img width="720" height="455" alt="image" src="https://github.com/user-attachments/assets/edf22be8-e5a4-4e7d-84c9-8863b83f6b8d" />
+
+Yolo consists 3 parts principally, Backbone, Net, Head.
+Backbone(CSPDarknet): the role is to extract features using Cross Stage Partial Network(Conv+BN+SiLU, Residual,Down sampling)
+Neck(PANet) : They capture position and semantic information using bi-directional structure(FPN + PAN)
+*FPN : large feature(location) -> upsample -> concate with small feature(semantic information)
+*PAN : small feature(semantic inforamtion) -> downsample -> concate with large feature(localization)
+Head : predict class and box 
+
+Auto Anchor(data compatibility) : the center of having high accuracy from R-CNN, anchor box is automatically generated
+Mosaic Augumentation(data diversity or augumentation) : they merge 4 images to one,which improve detecion of small obejct and reduce batch size reliance
+
+different size depends on needs : nano, small, medium,large, XLarge
+
+- **Yolo v8**:
+<img width="850" height="478" alt="image" src="https://github.com/user-attachments/assets/9ac8247d-778f-41b7-a7da-68925a821a49" />
+
+
+Anchor free : Anchor improves accuracy, but main cause of slowness. so Instead they predict center point of obejct directly and calculate distance from it.
+Decoupled Head : seperate classification and regression
+C2f(Cross Stage Partial + Feature Flow) :
 
   
 ---
