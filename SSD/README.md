@@ -1,4 +1,4 @@
-# Single Shot Multi-Box Detector
+# Single Shot Multi-Box Detector(F)
 
 - SSD was developed to perform both classification and localization simultaneously in a single forward pass, similar to YOLO. Compared to early versions of YOLO (such as YOLOv1 and YOLOv3), SSD achieved better accuracy. However, as later versions of YOLO significantly improved, SSD gradually became less competitive.
 
