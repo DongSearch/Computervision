@@ -1,6 +1,6 @@
 # 3D Rendering
 
-<img width="172" height="45" alt="image" src="https://github.com/user-attachments/assets/8a31b615-eb9a-461d-89dc-c6d7b9624aca" /># 3D Rendering
+<img width="172" height="45" alt="image" src="https://github.com/user-attachments/assets/8a31b615-eb9a-461d-89dc-c6d7b9624aca" />
 3D renering is the process of simulating how light travels in a 3D scene and interacts with obejcts to produce a 2D image.
 
 ## Key Point
